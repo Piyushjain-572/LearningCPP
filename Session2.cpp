@@ -5,7 +5,7 @@ using namespace std;
 // main is a function or we can say it a main thread for our process
 int main(){
 	
-	cout<<"Hello";
+	cout<<"Hello"<<"\n";
 
 	// a is the name of storage container
 	// we also call it as a variable
