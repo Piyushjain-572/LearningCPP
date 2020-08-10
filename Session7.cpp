@@ -3,8 +3,8 @@ using namespace std;
 
 // We are passing Values
 // void swap(int a, int b){
-
 // We are passing References
+
 void swap(int &a, int &b){
 
 	cout<<"a before swap is: "<<a<<"\n";
@@ -18,6 +18,15 @@ void swap(int &a, int &b){
 	cout<<"b after swap is: "<<b<<"\n";
 }
 
+void printArray(int someArr[5]){ // Reference Copy
+
+	cout<<"someArr is: "<<someArr<<"\n";
+
+	for(int i=0;i<5;i++){
+		someArr[i] = someArr[i]+10;
+	}
+	cout<<"\n";
+}
 int main(){
 	
 	int x = 10;
@@ -46,5 +55,24 @@ int main(){
 	++z;
 	cout<<"x is: "<<x<<"\n"; // 12
 	cout<<"z is: "<<z<<"\n"; // 12
+	
+	int arr[5];
+
+	arr[0] = 10;
+	arr[1] = 20;
+	arr[2] = 30;
+	arr[3] = 40;
+	arr[4] = 50;
+
+	cout<<"arr is: "<<arr<<"\n";
+
+	printArray(arr);
+
+	for(int i=0;i<5;i++){
+		cout<<arr[i]<<"  ";
+	}
+
+	// Direct Assignment is an error
+	// int anotherArr[5] = arr;
 	return 0;
 }
