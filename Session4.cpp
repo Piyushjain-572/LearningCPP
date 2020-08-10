@@ -75,6 +75,7 @@ int main(){
 		cout<<arr2[i]<<"  "<<&arr2[i]<<"\n";
 	}
 
+    
 
 	return 0;
 }
