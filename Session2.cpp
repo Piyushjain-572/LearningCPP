@@ -30,7 +30,7 @@ int main(){
 
 	// x is 12
 	// int y = x++; // value copy
-	int y = ++x;
+	int y = x++;
 	cout<<"y is: "<<y<<"\n";
 	cout<<"x is: "<<x<<"\n";
 
@@ -40,7 +40,7 @@ int main(){
 	int q = 8;		// 1 0 0 0
 	int r = p & q;  // 1 0 0 0
 
-	int s = p ^ q;  // 0 1 0 0
+	int s = p ^ q;  // 0 1 0 0 This is X-OR
 
 	cout<<"r is: "<<r<<"\n";
 	cout<<"s is: "<<s<<"\n";
@@ -54,8 +54,8 @@ int main(){
 	cout<<"u is: "<<u<<"\n";
 	cout<<"v is: "<<v<<"\n";
 
-	int w = (10>2) ? 5 : 10;
-	cout<<"w is: "<<w<<"\n"; 
+	int w = (10>2) ? 5 :10 ;
+	cout<<"w is: "<<w<<"\n";
 
 	/*
 		Arithmetic Operators
